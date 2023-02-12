@@ -48,8 +48,12 @@ if __name__ == '__main__':
 	for item in FlatIterator(nested_list2):
 		print(item)
 
+	print('\n')
+	
 	for item in flat_generator(nested_list2):
 		print(item)
 
+	print('\n')
+
 	flat_list = [item for item in FlatIterator(nested_list2)]
-	print('\n', flat_list, '\n\n')
+	print('\n', flat_list)
